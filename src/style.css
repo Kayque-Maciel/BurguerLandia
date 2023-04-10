@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*------FORMATAÇÕES--------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #2F2A2A;
+    font-family: 'Tinos', serif;
+}
+
+/*--------FIM FORMATAÇÕES----------*/
+
+/*----------INÍCIO HEADER--------*/
+
+#logo{
+    margin-left: 20px;
+}
+
+a{
+    color:#F7C334;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover{
+    opacity: .7;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#2F2A2A;
+    height: 11vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 23px;
+    font-size: 18px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+}
+
+.contato p{
+    color: #F7C334;
+    margin-left: 10px;
+    
+}
+
+nav button{
+    background-color: #F7C334;
+    color: #fff;
+    padding: 11px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+nav button:hover{
+    opacity: .8;
+}
+/*----------FIM HEADER---------*/
+
+/*-----------INÍCIO PÁGINA APRESENTAÇÃO------------*/
+.home{
+    height: 900px;
+    background-image: url(images/fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.homeinfo{
+    font-size: 60px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 150px;
+    color: #F7C334;
+}
+
+.homedesc{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+/*-----------FIM PÁGINA APRESENTAÇÃO---------*/
+
+/*----------INÍCIO BLOCOS DE INFORMAÇÃO-----------*/
+.infos{
+    height: 250px;
+}
+
+.info{
+    position: absolute;
+    background-color: #353030;
+    width: 350px;
+    height: 350px;
+    margin-left: 100px;
+    margin-top: -200px;
+    border-radius: 5px;
+    
+}
+
+.info2{
+    position: absolute;
+    background-color: #353030;
+    width: 350px;
+    height: 350px;
+    margin-left: 500px;
+    margin-top: -200px;
+    border-radius: 5px;
+    
+}
+
+
+.info3{
+    position: absolute;
+    background-color: #353030;
+    width: 350px;
+    height: 350px;
+    margin-left: 900px;
+    margin-top: -200px;
+    border-radius: 5px;
+    
+}
+
+.conteudo{
+    font-size: 30px;
+    text-align: center;
+    padding: 6px;
+    color: #fff;
+}
+
+.conteudo p{
+    margin-top: 20px;
+}
+/*---------FIM BLOCOS DE IMFORMAÇÕES-------------*/
+
+/*--------INÍCIO SOBRE--------------*/
+.sobre{
+    display: flex;
+    justify-content: flex-start;
+    height: 600px;
+}
+
+.hist{
+    margin-left: 100px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.hist h1{
+    font-size: 70px;
+}
+
+.hist span{
+    color: #F7C334;
+}
+
+.hist p{
+    width: 40%;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.hambs1{
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -20px;
+    z-index: 5;
+}
+
+.hambs2{
+    position: absolute;
+    margin-left: 850px;
+    margin-top: -50px;
+    
+}
+
+.hambs3{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 150px;
+    
+}
+/*---------------FIM SOBRE--------------*/
+
+/*-----------INÍCIO SLIDER-----------*/
+.carros{
+    height: 650px;
+}
+
+.slider{
+    margin:0 auto;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 99%;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -160px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+/*--------------FIM SLIDER--------------*/
+
+/*-------------INÍCIO CARDÁPIO---------------*/
+
+.cardapio{
+    height: 1400px;
+}
+
+.cardapio h1{
+    text-align: center;
+    font-size: 70px;
+    color: #F7C334;
+    
+}
+
+.img-card{
+    margin-top: 100px;
+    margin-left: 50px;
+    
+}
+
+.img-card img{
+    position: absolute;
+}
+
+.img-card2{
+    margin-top: 470px;
+}
+
+.img-card3{
+    margin-top: 780px;
+}
+
+.img-card4{
+    margin-top: 470px;
+    margin-left: 333px;
+}
+
+.card{
+    margin-left: 800px;
+    margin-top: -30px;
+}
+
+.opc{
+    background-color: #3C3636;
+    height: 180px;
+    width: 450px;
+    border-radius: 30px 8px 30px 8px;
+    margin-top: 100px;
+    color: #F7C334;
+}
+
+.opc h2{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.opc img{
+    margin-top: 25px;
+    margin-left: 10px;
+    float: left;
+}
+
+.opc p{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+/*---------------FIM CARDÁPIO--------------*/
+
+/*-------INÍCIO FOOTER--------*/
+
+footer{
+    height: 200px;
+    background-color: #3C3636;
+}
+
+.nav-footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-footer img{
+    margin-bottom: 30px;
+}
+
+
+.nav-list-footer{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list-footer li{
+    letter-spacing: 3px;
+    margin-left: 23px;
+    font-size: 18px;
+}
+/*---------FIM FOOTER--------*/
+
+/*-----------INÍCIO RESPONSIVO----------*/
+
+@media (max-width:1250px){
+    
+    
+    .info{
+        width: 270px;
+        height: 270px;
+        margin-left: 40px;
+    }
+    
+    .info p{
+        font-size: 25px;
+    }
+
+    .info2{
+        width: 270px;
+        height: 270px;
+        margin-left: 350px;
+    }
+
+    .info2 p{
+        font-size: 23px;
+    }
+
+
+    .info3{
+        width: 270px;
+        height: 270px;
+        margin-left: 660px;
+    }
+
+    .info3 p{
+        font-size: 22px;
+    }
+
+    .hambs1{
+        width: 20%;
+        margin-left: 550px;
+    }
+
+    .hambs2{
+        width: 20%;
+        margin-left: 700px;
+        margin-top: 100px;
+    }
+
+    .hambs3{
+        width: 20%;
+        margin-left: 750px;
+        margin-top: 250px;
+    }
+
+    .img-card1{
+        width: 40%;
+    }
+
+    .img-card2{
+        width: 20%;
+        margin-top: 430px;
+    }
+
+    .img-card3{
+        width: 20%;
+        margin-top: 680px;
+    }
+
+    .img-card4{
+        width: 19%;
+        height: 500px;
+        margin-top: 430px;
+        margin-left: 260px;
+    }
+
+    .card{
+        margin-left: 550px;
+    }
+}
+
+@media (max-width: 999px) {
+
+    .nav-list{
+        position: absolute;
+        top: 11vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #2F2A2A;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-200%);
+        transition: transform 0.3s ease-in;
+        z-index: 1;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .contato{
+        display: none;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .homeinfo{
+        font-size: 45px;
+        margin-left: 10px;
+    }
+
+    .homedesc{
+        font: 30px;
+    }
+
+    .infos{
+        display: flex;
+        justify-content: center;
+        height: 900px;
+        
+    }
+
+    .info{
+        margin-left: 0;
+    }
+
+    .info2{
+        margin-left: 0;
+        margin-top: 200px;
+    }
+
+    .info3{
+        margin-left: 0;
+        margin-top: 600px;
+    }
+
+    .sobre{
+        height: 600px;
+    }
+
+    .hist{
+        margin: auto;
+    }
+
+    .hist p{
+        font-size: 18px;
+        width: 500px;
+    
+    }
+
+    .hambs1{
+        display: none;
+    }
+
+    .hambs2{
+        display: none;
+    }
+
+    .hambs3{
+        display: none;
+    }
+
+    .img-card{
+        display: none;
+    }
+
+    .carros{
+        display: none;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    footer{
+        height: 300px;
+    }
+
+    .nav-footer img{
+      margin-left: 25px;
+    }
+
+    .nav-list-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-list-footer li{
+        margin-top: 5px;
+    }
+}
+
+
+
+@media (max-width:425px) {
+    .homeinfo{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+    .homedesc{
+        font-size: 15px;
+    }
+
+    .infos{
+        height: 900px;
+    }
+
+    .infos p{
+        font-size: 26px;
+    }
+
+    .info{
+        width: 300px;
+        height: 300px;
+    }
+
+    .info2{
+        width: 300px;
+        height: 300px;
+    }
+
+    .info3{
+        width: 300px;
+        height: 300px;
+    }
+
+    .sobre img{
+        display: none;
+    }
+
+    .hist{
+        margin: auto;
+    }
+
+    .hist h1{
+        font-size: 50px;
+    }
+
+    .hist p{
+        font-size: 16px;
+        height: 400px;
+        width: 300px;
+    }
+
+    .opc{
+        width: 300px;
+    }
+
+    .opc img{
+        margin-top: 60px;
+        width: 40%;
+    }
+
+    .opc p{
+        font-size: 11px;
+    }
+
+    
+}
+
+/*-------------FIM RESPONSIVO-------------*/
+
+
+
